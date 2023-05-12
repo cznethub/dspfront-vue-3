@@ -209,7 +209,7 @@ import {
   useJsonFormsArrayControl,
   RendererProps,
   useJsonFormsControl,
-} from '@jsonforms/vue2';
+} from '@jsonforms/vue';
 import { useNested, useVuetifyArrayControl, useVuetifyControl } from '@/renderers/util/composition';
 import {
   VCard,

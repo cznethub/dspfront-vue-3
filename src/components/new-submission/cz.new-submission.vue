@@ -262,7 +262,7 @@
 
 <script lang="ts">
 import { Component, Ref } from "vue-property-decorator";
-import { JsonForms, JsonFormsChangeEvent } from "@jsonforms/vue2";
+import { JsonForms, JsonFormsChangeEvent } from "@jsonforms/vue";
 import { JsonFormsRendererRegistryEntry } from "@jsonforms/core";
 import { CzRenderers } from "@/renderers/renderer.vue";
 import { EnumRepositoryKeys, IRepositoryUrls } from "../submissions/types";

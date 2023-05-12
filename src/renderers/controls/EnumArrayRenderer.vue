@@ -63,7 +63,7 @@ import {
   useControl,
   ControlProps,
   useJsonFormsControl,
-} from '@jsonforms/vue2';
+} from '@jsonforms/vue';
 import { defineComponent } from 'vue';
 import { useVuetifyBasicControl } from '@/renderers/util/composition';
 

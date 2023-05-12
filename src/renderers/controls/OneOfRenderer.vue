@@ -142,7 +142,7 @@ import {
   rendererProps,
   RendererProps,
   useJsonFormsOneOfControl,
-} from '@jsonforms/vue2';
+} from '@jsonforms/vue';
 import { defineComponent, ref } from 'vue'
 import { useVuetifyControl } from '@/renderers/util/composition';
 import {

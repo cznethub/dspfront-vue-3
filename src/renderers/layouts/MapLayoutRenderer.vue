@@ -43,7 +43,7 @@ import {
   rendererProps,
   RendererProps,
   useJsonFormsControlWithDetail
-} from "@jsonforms/vue2";
+} from "@jsonforms/vue";
 import { useVuetifyControl,  } from "@/renderers/util/composition";
 import { VContainer, VRow, VCol } from "vuetify/lib";
 import { Loader, LoaderOptions } from "google-maps";

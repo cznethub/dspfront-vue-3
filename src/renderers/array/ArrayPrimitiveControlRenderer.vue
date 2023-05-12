@@ -56,7 +56,7 @@ import {
   rankWith,
 } from "@jsonforms/core"
 import { defineComponent } from 'vue'
-import { rendererProps, useJsonFormsControl } from "@jsonforms/vue2"
+import { rendererProps, useJsonFormsControl } from "@jsonforms/vue"
 import { default as ControlWrapper } from '@/renderers/controls/ControlWrapper.vue'
 import { VHover } from 'vuetify/lib'
 import { useVuetifyControl } from '@/renderers/util/composition';

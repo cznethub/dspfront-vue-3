@@ -1,4 +1,4 @@
-import '@jsonforms/vue2-vanilla/vanilla.css';
+import '@jsonforms/vue-vanilla/vanilla.css';
 import '@/assets/css/global.scss'
 
 import Vuex from 'vuex'
