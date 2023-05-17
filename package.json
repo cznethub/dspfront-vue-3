@@ -36,6 +36,7 @@
     "rxjs": "^7.5.5",
     "sprintf-js": "^1.1.2",
     "v-mask": "^2.3.0",
+    "vite-plugin-vuetify": "^1.0.2",
     "vue": "^3.2.47",
     "vue-browser-detect-plugin": "^0.1.18",
     "vue-cookies": "^1.8.1",
