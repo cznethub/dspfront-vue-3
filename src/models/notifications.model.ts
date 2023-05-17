@@ -1,5 +1,5 @@
 import { DEFAULT_TOAST_DURATION } from '@/constants'
-import { Model } from '@vuex-orm/core'
+import { Model } from 'pinia-orm'
 import { Subject } from 'rxjs'
 
 export interface IToast {

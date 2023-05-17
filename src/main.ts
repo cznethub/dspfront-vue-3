@@ -2,7 +2,7 @@ import '@jsonforms/vue-vanilla/vanilla.css';
 import '@/assets/css/global.scss'
 
 import Vuex from 'vuex'
-import VuexORM from '@vuex-orm/core'
+import { Model } from 'pinia-orm'
 import createPersistedState from 'vuex-persistedstate'
 import VueCookies from 'vue-cookies'
 import Buefy from '@dword-design/buefy'

@@ -1,4 +1,4 @@
-import VuexORM from '@vuex-orm/core'
+import { Model } from 'pinia-orm'
 import User from '@/models/user.model'
 import Submission from '@/models/submission.model'
 import Repository from './repository.model'
