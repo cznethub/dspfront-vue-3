@@ -1,4 +1,5 @@
-import Vue from 'vue'
+// import Vue from 'vue'
+import app from '../main.ts'
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
@@ -10,10 +11,10 @@ const vuetify = createVuetify({
 })
 
 
-Vue.use(vuetify)
+app.use(vuetify)
 
-const opts = {
+// const opts = {
   
-}
+// }
 
-export default new Vuetify(opts)
+// export default new Vuetify(opts)

@@ -7,7 +7,7 @@ import { Model, createORM } from 'pinia-orm'
 import VueCookies from 'vue-cookies'
 import Buefy from '@dword-design/buefy'
 import VueRouter from 'vue-router'
-import Vue from 'vue'
+// import Vue from 'vue'
 import { createApp } from 'vue'
 import App from './App.vue'
 import vueFilterPrettyBytes from 'vue-filter-pretty-bytes'
@@ -15,7 +15,7 @@ import vuetify from '@/plugins/vuetify'
 import browserDetect from "vue-browser-detect-plugin"
 import IdleVue from 'idle-vue'
 
-import { router } from './router'
+// import { router } from './router'
 // import { orm } from '@/models/orm'
 // import { persistedPaths } from './models/persistedPaths'
 // import { APP_NAME } from './constants'
@@ -61,9 +61,13 @@ app.use(Buefy, {
   defaultNoticeQueue: false,
 })
 
-new Vue({
-  router,
-  // store,
-  vuetify,
-  render: (h) => h(App),
-}).$mount('#app')
+// new Vue({
+//   router,
+//   // store,
+//   vuetify,
+//   render: (h) => h(App),
+// }).$mount('#app')
+
+app.mount('#app')
+
+export default app
