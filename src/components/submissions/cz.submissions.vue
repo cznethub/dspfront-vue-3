@@ -69,8 +69,8 @@
 
             <v-card color="blue-grey lighten-4">
               <v-card-text>
-                <template v-for="repo of supportedRepoMetadata">
-                  <v-tooltip :key="repo.name" left transition="fade">
+                <template :key="repo.name" v-for="repo of supportedRepoMetadata">
+                  <v-tooltip left transition="fade">
                     <template v-slot:activator="{ on, attrs }">
                       <v-btn
                         class="mx-0 my-4"

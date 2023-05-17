@@ -8,8 +8,8 @@
 
     <v-stepper v-model="currentStepIndex" flat outlined>
       <v-stepper-header>
-        <template v-for="(step, index) in steps">
-          <v-stepper-step :key="`${index}-step`"
+        <template v-for="(step, index) in steps" :key="`${index}-step`">
+          <v-stepper-step
             :complete="currentStepIndex > index" :step="index" editable edit-icon="mdi-check">
             <div>{{ step.next || 'Recommendations' }}</div>
             <v-chip v-if="step.selectedOption" class="mt-2" color="success">{{ step.selectedOption.label }}</v-chip>
