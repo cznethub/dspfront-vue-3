@@ -1,5 +1,3 @@
-// import Vue from 'vue'
-import app from '../main.ts'
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
@@ -10,11 +8,4 @@ const vuetify = createVuetify({
   directives,
 })
 
-
-app.use(vuetify)
-
-// const opts = {
-  
-// }
-
-// export default new Vuetify(opts)
+export default vuetify

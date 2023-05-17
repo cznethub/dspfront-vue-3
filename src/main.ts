@@ -35,6 +35,8 @@ const app = createApp(App)
 const pinia = createPinia().use(createORM())
 app.use(pinia)
 
+app.use(vuetify)
+
 // Create Vuex Store and register database through Vuex ORM.
 // const store = new Vuex.Store({
 //   plugins: [
