@@ -231,7 +231,7 @@ import {
   VExpansionPanel,
   VExpansionPanelHeader,
   VExpansionPanelContent,
-} from 'vuetify/lib';
+} from 'vuetify';
 import ValidationBadge from '@/renderers/controls/components/ValidationBadge.vue';
 import ValidationIcon from '@/renderers/controls/components/ValidationIcon.vue';
 import { ErrorObject } from 'ajv';

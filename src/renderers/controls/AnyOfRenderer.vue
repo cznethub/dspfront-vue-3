@@ -158,7 +158,7 @@ import {
   VTab,
   VTabsItems,
   VTabItem,
-} from 'vuetify/lib';
+} from 'vuetify';
 import CombinatorProperties from '@/renderers/components/CombinatorProperties.vue'
 
 const controlRenderer = defineComponent({

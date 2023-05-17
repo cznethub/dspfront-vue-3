@@ -58,7 +58,7 @@ import {
 import { defineComponent } from 'vue'
 import { rendererProps, useJsonFormsControl } from "@jsonforms/vue"
 import { default as ControlWrapper } from '@/renderers/controls/ControlWrapper.vue'
-import { VHover } from 'vuetify/lib'
+import { VHover } from 'vuetify'
 import { useVuetifyControl } from '@/renderers/util/composition';
 
 const controlRenderer = defineComponent({

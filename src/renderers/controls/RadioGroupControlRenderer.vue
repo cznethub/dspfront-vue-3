@@ -51,7 +51,7 @@ import {
   RendererProps,
 } from '@jsonforms/vue';
 import { default as ControlWrapper } from './ControlWrapper.vue';
-import { VRadioGroup, VRadio, VLabel } from 'vuetify/lib';
+import { VRadioGroup, VRadio, VLabel } from 'vuetify';
 
 import { useVuetifyControl } from '@/renderers/util/composition';
 import { defineComponent } from 'vue'

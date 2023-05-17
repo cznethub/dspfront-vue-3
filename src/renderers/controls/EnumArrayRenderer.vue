@@ -55,7 +55,7 @@ import {
   uiTypeIs,
   composePaths,
 } from '@jsonforms/core';
-import { VCheckbox, VContainer, VRow, VCol } from 'vuetify/lib';
+import { VCheckbox, VContainer, VRow, VCol } from 'vuetify';
 import {
   DispatchRenderer,
   rendererProps,

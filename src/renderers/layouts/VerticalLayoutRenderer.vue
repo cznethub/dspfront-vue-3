@@ -40,7 +40,7 @@ import {
   RendererProps,
 } from '@jsonforms/vue'
 import { useVuetifyLayout } from '@/renderers/util/composition';
-import { VContainer, VRow, VCol } from 'vuetify/lib'
+import { VContainer, VRow, VCol } from 'vuetify'
 
 const layoutRenderer = defineComponent({
   name: 'vertical-layout-renderer',
