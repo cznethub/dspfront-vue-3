@@ -461,7 +461,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Ref } from "vue-property-decorator";
+import { Component, Ref, Vue } from "vue-facing-decorator";
 import {
   ISubmission,
   EnumSubmissionSorts,
@@ -470,7 +470,6 @@ import {
   EnumRepositoryKeys,
 } from "@/components/submissions/types";
 import { repoMetadata } from "@/components/submit/constants";
-import { mixins } from "vue-class-component";
 import { ActiveRepositoryMixin } from "@/mixins/activeRepository.mixin";
 import { Subscription } from "rxjs";
 import {
@@ -488,10 +487,9 @@ import { isRepositoryAuthorized } from "@/renderers/styles";
 @Component({
   name: "cz-submissions",
   components: { CzRegisterDatasetDialog },
+  mixins: [ActiveRepositoryMixin]
 })
-export default class CzSubmissions extends mixins<ActiveRepositoryMixin>(
-  ActiveRepositoryMixin
-) {
+export default class CzSubmissions extends Vue {
   @Ref("registerDatasetDialog") registerDatasetDialog!: InstanceType<
     typeof CzRegisterDatasetDialog
   >;

@@ -34,10 +34,9 @@
 </template>
 
 <script lang="ts">
-  import { Component, Ref } from 'vue-property-decorator'
+  import { Component, Ref, Vue } from 'vue-facing-decorator'
   import { repoMetadata } from '@/components/submit/constants'
   import { IRepository } from '../submissions/types'
-  import { mixins } from 'vue-class-component'
   import { ActiveRepositoryMixin } from '@/mixins/activeRepository.mixin'
   import CzRepositorySubmitCard from '@/components/submit/cz.repository-submit-card.vue'
   import CzRegisterDatasetDialog from '@/components/register-dataset/cz.register-dataset-dialog.vue'
@@ -45,8 +44,9 @@
   @Component({
     name: 'cz-submit',
     components: { CzRepositorySubmitCard, CzRegisterDatasetDialog },
+    mixins: [ActiveRepositoryMixin]
   })
-  export default class CzSubmit extends mixins<ActiveRepositoryMixin>(ActiveRepositoryMixin) {
+  export default class CzSubmit extends Vue {
     @Ref("registerDatasetDialog") registerDatasetDialog!: InstanceType<typeof CzRegisterDatasetDialog>
 
     protected get repoCollection(): IRepository[] {

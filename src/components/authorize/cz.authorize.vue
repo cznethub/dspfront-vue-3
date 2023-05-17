@@ -32,8 +32,7 @@
 </template>
 
 <script lang="ts">
-  import { Component, Prop } from 'vue-property-decorator'
-  import { mixins } from 'vue-class-component'
+  import { Component, Prop } from 'vue-facing-decorator'
   import { ActiveRepositoryMixin } from '@/mixins/activeRepository.mixin'
   import { getRepositoryFromKey } from '@/constants'
   import Repository from '@/models/repository.model'

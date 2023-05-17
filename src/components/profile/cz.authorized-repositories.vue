@@ -50,9 +50,8 @@
 </template>
 
 <script lang="ts">
-  import { Component } from 'vue-property-decorator'
+  import { Component, Vue } from 'vue-facing-decorator'
   import { repoMetadata } from '@/components/submit/constants'
-  import { mixins } from 'vue-class-component'
   import { ActiveRepositoryMixin } from '@/mixins/activeRepository.mixin'
   import { IRepository } from '../submissions/types'
   import { getRepositoryFromKey } from '@/constants'
@@ -62,8 +61,9 @@
   @Component({
     name: 'cz-authorized-repositories',
     components: { },
+    mixins: [ActiveRepositoryMixin]
   })
-  export default class CzAuthorizedRepositories extends mixins<ActiveRepositoryMixin>(ActiveRepositoryMixin) {
+  export default class CzAuthorizedRepositories extends Vue {
     protected repoMetadata = repoMetadata
 
     protected get supportedRepositories(): IRepository[] {

@@ -202,7 +202,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue } from "vue-facing-decorator";
 import { repoMetadata } from "../submit/constants";
 import { DISCOVERY_SITE_URL } from "@/constants";
 import User from "@/models/user.model";

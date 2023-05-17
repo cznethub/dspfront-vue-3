@@ -56,17 +56,17 @@
 </template>
 
 <script lang="ts">
-import { Component } from "vue-property-decorator";
+import { Component, Vue } from "vue-facing-decorator";
 import { repoMetadata } from '@/components/submit/constants'
 import { IRepository } from '../submissions/types'
-import { mixins } from 'vue-class-component'
 import { ActiveRepositoryMixin } from '@/mixins/activeRepository.mixin'
 
 @Component({
   name: "cz-register-dataset-dialog",
   components: {},
+  mixins: [ActiveRepositoryMixin]
 })
-export default class CzRegisterDatasetDialog extends mixins<ActiveRepositoryMixin>(ActiveRepositoryMixin) {
+export default class CzRegisterDatasetDialog extends Vue {
   public active = false
 
   protected get repoCollection(): IRepository[] {
