@@ -48,13 +48,10 @@ app.use(vuetify)
 //   ]
 // })
 
-const eventsHub = new Vue()
-      
 app.use(vueFilterPrettyBytes)
 app.use(VueRouter)
 app.use(VueCookies)
 app.use(browserDetect);
-app.use(IdleVue, { eventEmitter: eventsHub, idleTime: 60000, store })
 app.use(Buefy, {
   defaultIconPack: 'fas',
   defaultContainerElement: '#content',

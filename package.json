@@ -32,7 +32,6 @@
     "dayjs": "^1.11.7",
     "deepmerge": "^4.2.2",
     "google-maps": "^4.3.3",
-    "idle-vue": "^2.0.5",
     "lodash": "^4.17.21",
     "pinia": "^2.1.1",
     "pinia-orm": "^1.6.7",

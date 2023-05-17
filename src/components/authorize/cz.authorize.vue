@@ -32,7 +32,7 @@
 </template>
 
 <script lang="ts">
-  import { Component, Prop } from 'vue-facing-decorator'
+  import { Component, Prop, Vue } from 'vue-facing-decorator'
   import { ActiveRepositoryMixin } from '@/mixins/activeRepository.mixin'
   import { getRepositoryFromKey } from '@/constants'
   import Repository from '@/models/repository.model'
@@ -40,8 +40,9 @@
   @Component({
     name: 'cz-authorize',
     components: { },
+    mixins: [ActiveRepositoryMixin]
   })
-  export default class CzAuthorize extends mixins<ActiveRepositoryMixin>(ActiveRepositoryMixin) {
+  export default class CzAuthorize extends Vue {
     @Prop() repo!: string
 
     protected get repository() {
