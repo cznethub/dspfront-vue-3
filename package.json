@@ -17,6 +17,7 @@
     "test-e2e": "start-server-and-test serve http-get://localhost:8080 cypress:run-e2e"
   },
   "dependencies": {
+    "@dword-design/buefy": "^0.1.0",
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@jsonforms/core": "*",
