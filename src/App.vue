@@ -300,6 +300,10 @@ import Submission from "./models/submission.model";
 import Repository from "./models/repository.model";
 import External from "./models/external.model";
 import EarthChem from "./models/earthchem.model";
+import fontawesome from '@fortawesome/fontawesome'
+import regular from '@fortawesome/free-regular-svg-icons'
+
+fontawesome.library.add(regular)
 
 const INITIAL_DIALOG = {
   title: "",
