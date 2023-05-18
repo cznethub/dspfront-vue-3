@@ -1,7 +1,8 @@
 TODO
-pinia orm -> pinia
-vue-facing-decorator -> composables
-sprintf
+vuex orm -> pinia
+replace vue-facing-decorator -> composables
+re-enable sprintf
 fontawesome
-assets --- bg-3.jpg on home
+fix broken asset links --- bg-3.jpg on home, about page
 browserDetect
+enable routerGuards
