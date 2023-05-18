@@ -10,7 +10,7 @@ import VueRouter from 'vue-router'
 // import Vue from 'vue'
 import { createApp } from 'vue'
 import App from './App.vue'
-import vueFilterPrettyBytes from 'vue-filter-pretty-bytes'
+import prettyBytes from 'pretty-bytes';
 import vuetify from '@/plugins/vuetify'
 import browserDetect from "vue-browser-detect-plugin"
 import IdleVue from 'idle-vue'
@@ -48,7 +48,6 @@ app.use(vuetify)
 //   ]
 // })
 
-app.use(vueFilterPrettyBytes)
 app.use(VueRouter)
 app.use(VueCookies)
 app.use(browserDetect);
