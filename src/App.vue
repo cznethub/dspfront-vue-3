@@ -22,7 +22,7 @@
         <v-card
           class="nav-items has-space-right d-flex"
           :elevation="2"
-          v-if="!mdAndDown"
+          v-if="!$vuetify.display.mdAndDown"
         >
           <v-btn
             id="navbar-nav-home"
@@ -79,9 +79,9 @@
                   :to="{ path: '/profile' }"
                   active-class="primary white--text"
                 >
-                  <v-list-item-icon class="mr-2">
+                  <v-list-item class="mr-2">
                     <v-icon>mdi-account-circle</v-icon>
-                  </v-list-item-icon>
+                  </v-list-item>
 
                   <v-list-item-content>
                     <v-list-item-title>Account & Settings</v-list-item-title>
@@ -91,9 +91,9 @@
                 <v-divider></v-divider>
 
                 <v-list-item id="navbar-logout" @click="logOut()">
-                  <v-list-item-icon class="mr-2">
+                  <v-list-item class="mr-2">
                     <v-icon>mdi-logout</v-icon>
-                  </v-list-item-icon>
+                  </v-list-item>
 
                   <v-list-item-content>
                     <v-list-item-title>Log Out</v-list-item-title>

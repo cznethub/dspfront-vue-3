@@ -18,9 +18,9 @@
 
       <v-list dense>
         <v-list-item link :to="{ path: '/profile/account' }" active-class="active">
-          <v-list-item-icon>
+          <v-list-item>
             <v-icon>mdi-account-circle</v-icon>
-          </v-list-item-icon>
+          </v-list-item>
 
           <v-list-item-content>
             <v-list-item-title>Account</v-list-item-title>
@@ -28,9 +28,9 @@
         </v-list-item>
 
         <v-list-item link :to="{ path: '/profile/authorized-repositories' }" active-class="active">
-          <v-list-item-icon>
+          <v-list-item>
             <v-icon>mdi-key</v-icon>
-          </v-list-item-icon>
+          </v-list-item>
 
           <v-list-item-content>
             <v-list-item-title>Authorized Repositories</v-list-item-title>
@@ -38,9 +38,9 @@
         </v-list-item>
 
         <v-list-item id="drawer-nav-logout" @click="logOut()">
-          <v-list-item-icon>
+          <v-list-item>
             <v-icon>mdi-logout</v-icon>
-          </v-list-item-icon>
+          </v-list-item>
 
           <v-list-item-content>
             <v-list-item-title>Log Out</v-list-item-title>
