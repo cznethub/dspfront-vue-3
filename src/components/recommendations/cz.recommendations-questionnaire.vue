@@ -96,7 +96,8 @@
   import { guideUrls } from '@/components/recommendations/constants'
   import CzRecommendationCard from '@/components/recommendations/cz.recommendation-card.vue'
 
-  const mappings: CzStep = require('@/components/recommendations/mapping.json')
+  // const mappings: CzStep = require('@/components/recommendations/mapping.json')
+  import * as mappings from './mapping.json'
 
   interface CzStep {
     next?: string,  // The question that must be answered to continue

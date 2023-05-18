@@ -286,7 +286,7 @@ const renderers = [
   // ...vanillaRenderers,
   ...CzRenderers,
 ];
-const sprintf = require("sprintf-js").sprintf;
+// const sprintf = require("sprintf-js").sprintf;
 const customAjv = createAjv({ allErrors: true });
 ajvErrors(customAjv);
 
