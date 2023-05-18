@@ -3,3 +3,5 @@ pinia orm -> pinia
 vue-facing-decorator -> composables
 sprintf
 fontawesome
+assets --- bg-3.jpg on home
+browserDetect
