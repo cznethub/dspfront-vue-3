@@ -110,7 +110,7 @@
           <div class="table-item">
             <table
               class="text-body-1"
-              :class="{ 'is-xs-small': $vuetify.breakpoint.xs }"
+              :class="{ 'is-xs-small': $vuetify.display.xs }"
             >
               <tr>
                 <td colspan="2" class="text-h6 title">
@@ -125,7 +125,7 @@
           >
             <table
               class="text-body-1"
-              :class="{ 'is-xs-small': $vuetify.breakpoint.xs }"
+              :class="{ 'is-xs-small': $vuetify.display.xs }"
             >
               <tr>
                 <th class="pr-4 body-2 text-right">
@@ -182,7 +182,7 @@
             >
               <table
                 class="text-body-1"
-                :class="{ 'is-xs-small': $vuetify.breakpoint.xs }"
+                :class="{ 'is-xs-small': $vuetify.display.xs }"
               >
                 <tr>
                   <td colspan="2" class="text-h6 title">

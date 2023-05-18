@@ -22,7 +22,7 @@
         <v-card
           class="nav-items has-space-right d-flex"
           :elevation="2"
-          v-if="!$vuetify.breakpoint.mdAndDown"
+          v-if="!mdAndDown"
         >
           <v-btn
             id="navbar-nav-home"
@@ -47,7 +47,7 @@
           </v-btn>
         </v-card>
 
-        <template v-if="!$vuetify.breakpoint.mdAndDown">
+        <template v-if="!$vuetify.display.mdAndDown">
           <v-btn
             id="navbar-login"
             v-if="!isLoggedIn"
@@ -106,7 +106,7 @@
 
         <v-app-bar-nav-icon
           @click.stop="showMobileNavigation = true"
-          v-if="$vuetify.breakpoint.mdAndDown"
+          v-if="$vuetify.display.mdAndDown"
         />
       </v-container>
     </v-app-bar>

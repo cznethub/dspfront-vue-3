@@ -1,6 +1,6 @@
 <template>
   <div class="cz-profile">
-    <v-navigation-drawer permanent :mini-variant="$vuetify.breakpoint.mdAndDown" class="flex-shrink-0">
+    <v-navigation-drawer permanent :mini-variant="$vuetify.display.mdAndDown" class="flex-shrink-0">
       <template v-slot:prepend>
         <v-list-item two-line>
           <v-list-item-avatar>

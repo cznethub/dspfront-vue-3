@@ -10,7 +10,7 @@
       </v-card-subtitle>
 
       <v-card-text class="choice-container pb-8 gap-1"
-        :class="{ 'is-xs-small': $vuetify.breakpoint.xs }">
+        :class="{ 'is-xs-small': $vuetify.display.xs }">
         <v-hover>
           <template v-slot:default="{ hover }">
             <v-card class="transition-swing"

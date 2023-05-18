@@ -6,7 +6,7 @@
     <p class="text-body-1 mb-4">The Data Submission Portal needs your permission to access and interact with the repositories below.</p>
 
     <v-card v-for="repo of supportedRepositories" :key="repo.key" class="mb-6">
-      <v-card-title :class="{'is-small': $vuetify.breakpoint.mdAndDown }">
+      <v-card-title :class="{'is-small': $vuetify.display.mdAndDown }">
         <span class="repo-name">{{ repo.name }}</span>
         <template v-if="getAccessToken(repo.key)">
           <div>

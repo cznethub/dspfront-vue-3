@@ -198,7 +198,7 @@
                     <div class="flex-grow-1 mr-4">
                       <table
                         class="text-body-1"
-                        :class="{ 'is-xs-small': $vuetify.breakpoint.xs }"
+                        :class="{ 'is-xs-small': $vuetify.display.xs }"
                       >
                         <tr>
                           <td

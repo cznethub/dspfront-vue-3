@@ -194,7 +194,7 @@ const controlRenderer = defineComponent({
         : "mdi-calendar-clock";
     },
     useTabLayout(): boolean {
-      if (this.$vuetify.breakpoint.smAndDown) {
+      if (this.$vuetify.display.smAndDown) {
         return true;
       }
       return false;

@@ -158,7 +158,7 @@
         <v-card-text class="files-container" style="height: 15rem">
           <v-row class="flex-grow-1">
             <v-col
-              :cols="$vuetify.breakpoint.smAndUp ? 9 : 11"
+              :cols="$vuetify.display.smAndUp ? 9 : 11"
               v-click-outside="{ handler: onClickOutside, include }"
             >
               <v-treeview
@@ -344,7 +344,7 @@
                 </template>
               </v-treeview>
             </v-col>
-            <v-col cols="3" v-if="$vuetify.breakpoint.smAndUp"></v-col>
+            <v-col cols="3" v-if="$vuetify.display.smAndUp"></v-col>
           </v-row>
         </v-card-text>
         <v-divider></v-divider>
