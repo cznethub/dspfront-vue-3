@@ -10,10 +10,8 @@ import VueRouter from 'vue-router'
 // import Vue from 'vue'
 import { createApp } from 'vue'
 import App from './App.vue'
-import prettyBytes from 'pretty-bytes';
 import vuetify from '@/plugins/vuetify'
-import browserDetect from "vue-browser-detect-plugin"
-import IdleVue from 'idle-vue'
+// import IdleVue from 'idle-vue'
 
 // import { router } from './router'
 // import { orm } from '@/models/orm'
@@ -50,7 +48,6 @@ app.use(vuetify)
 
 app.use(VueRouter)
 app.use(VueCookies)
-app.use(browserDetect);
 app.use(Buefy, {
   defaultIconPack: 'fas',
   defaultContainerElement: '#content',

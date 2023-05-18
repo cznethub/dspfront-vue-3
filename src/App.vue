@@ -394,7 +394,9 @@ export default class App extends Vue {
   }
 
   protected get isSafari(): boolean {
-    return this.$browserDetect.isSafari;
+    // return this.$browserDetect.isSafari;
+    // TODO: fix browser detect
+    return false
   }
 
   mounted() {
