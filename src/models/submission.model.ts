@@ -1,5 +1,5 @@
 import { ISubmission, EnumRepositoryKeys } from '@/components/submissions/types'
-import { Model } from 'pinia-orm'
+import { Model } from '@vuex-orm/core'
 import axios from "axios"
 import User from './user.model'
 import {

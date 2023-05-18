@@ -1,9 +1,9 @@
 import '@jsonforms/vue-vanilla/vanilla.css';
 import '@/assets/css/global.scss'
 
-import { createPinia } from 'pinia'
-import { Model, createORM } from 'pinia-orm'
-// import createPersistedState from 'vuex-persistedstate'
+import Vuex from 'vuex'
+import VuexORM from '@vuex-orm/core'
+import createPersistedState from 'vuex-persistedstate'
 import VueCookies from 'vue-cookies'
 import Buefy from '@dword-design/buefy'
 import { router } from './router'
@@ -13,9 +13,9 @@ import App from './App.vue'
 import vuetify from '@/plugins/vuetify'
 // import IdleVue from 'idle-vue'
 
-// import { orm } from '@/models/orm'
-// import { persistedPaths } from './models/persistedPaths'
-// import { APP_NAME } from './constants'
+import { orm } from '@/models/orm'
+import { persistedPaths } from './models/persistedPaths'
+import { APP_NAME } from './constants'
 
 // Uncomment to filter out errors
 // Vue.config.errorHandler = (err, vm, info) => {
@@ -31,21 +31,19 @@ const app = createApp(App)
 
 app.use(router)
 
-const pinia = createPinia().use(createORM())
-app.use(pinia)
-
 app.use(vuetify)
 
 // Create Vuex Store and register database through Vuex ORM.
-// const store = new Vuex.Store({
-//   plugins: [
-//     VuexORM.install(orm),
-//     createPersistedState({
-//       paths: persistedPaths,
-//       key: APP_NAME
-//     })
-//   ]
-// })
+const store = new Vuex.Store({
+  plugins: [
+    VuexORM.install(orm),
+    createPersistedState({
+      paths: persistedPaths,
+      key: APP_NAME
+    })
+  ]
+})
+app.use(store)
 
 app.use(router)
 app.use(VueCookies)

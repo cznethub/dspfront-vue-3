@@ -1,4 +1,4 @@
-import { Model } from 'pinia-orm'
+import { Model } from '@vuex-orm/core'
 import { EnumRepositoryKeys, IRepository, IRepositoryUrls } from '@/components/submissions/types'
 import { repoMetadata } from "@/components/submit/constants"
 import { Subject } from 'rxjs'

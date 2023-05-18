@@ -1,5 +1,5 @@
 import { router } from '@/router'
-import { Model } from 'pinia-orm'
+import { Model } from '@vuex-orm/core'
 import { Subject } from 'rxjs'
 import { RawLocation } from 'vue-router'
 import axios from "axios"
