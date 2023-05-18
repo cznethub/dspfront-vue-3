@@ -46,7 +46,7 @@
     "vue-easy-dnd": "^1.19.0",
     "vue-facing-decorator": "^2.1.20",
     "vue-json-viewer": "^3",
-    "vue-router": "^3.5.2",
+    "vue-router": "^4.2.0",
     "vuetify": "^3.2.5",
     "vuex-persistedstate": "^4.1.0"
   },
