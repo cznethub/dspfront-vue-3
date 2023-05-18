@@ -280,7 +280,7 @@
 
 <script lang="ts">
 import { Component, Vue, Watch } from "vue-facing-decorator";
-// import { setupRouteGuards } from "./router";
+import { setupRouteGuards } from "./router";
 import { Subscription } from "rxjs";
 import {
   APP_NAME,
@@ -373,7 +373,7 @@ export default class App extends Vue {
       attrs: { to: "/submit" },
       label: "Submit Data",
       icon: "mdi-book-plus",
-      isActive: () => this.$route.name === "register",
+      // isActive: () => this.$route.name === "register",
     },
     {
       attrs: { href: DISCOVERY_SITE_URL },
@@ -512,7 +512,7 @@ export default class App extends Vue {
 
     // Guards are setup after checking authorization and loading access tokens
     // because they depend on user logged in status
-    setupRouteGuards();
+    // setupRouteGuards();
 
     this.isLoading = false;
   }
