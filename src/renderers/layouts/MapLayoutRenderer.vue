@@ -45,7 +45,7 @@ import {
   useJsonFormsControlWithDetail
 } from "@jsonforms/vue";
 import { useVuetifyControl,  } from "@/renderers/util/composition";
-import { VContainer, VRow, VCol } from "vuetify";
+import { VContainer, VRow, VCol } from "vuetify/components";
 import { Loader, LoaderOptions } from "google-maps";
 const options: LoaderOptions = { libraries: ["drawing"] };
 const loader = new Loader(process.env.VUE_APP_GOOGLE_MAPS_API_KEY, options);

@@ -65,8 +65,8 @@
             </v-tab>
           </v-tabs>
 
-          <v-tabs-items v-model="selectedIndex">
-            <v-tab-item
+          <v-window v-model="selectedIndex">
+            <v-window-item
               v-for="(oneOfRenderInfo, oneOfIndex) in oneOfRenderInfos"
               :key="`${control.path}-${oneOfIndex}`"
               class="pt-8"
@@ -80,8 +80,8 @@
                 :cells="control.cells"
                 :enabled="control.enabled"
               />
-            </v-tab-item>
-          </v-tabs-items>
+            </v-window-item>
+          </v-window>
         </template>
 
         <template v-else>
@@ -155,9 +155,9 @@ import {
   VBtn,
   VTabs,
   VTab,
-  VTabsItems,
-  VTabItem,
-} from 'vuetify';
+  VWindowItem,
+  VWindow,
+} from 'vuetify/components';
 import CombinatorProperties from '@/renderers/components/CombinatorProperties.vue'
 
 const controlRenderer = defineComponent({
@@ -174,8 +174,8 @@ const controlRenderer = defineComponent({
     VBtn,
     VTabs,
     VTab,
-    VTabsItems,
-    VTabItem,
+    VWindowItem,
+    VWindow,
   },
   props: {
     ...rendererProps<ControlElement>(),
