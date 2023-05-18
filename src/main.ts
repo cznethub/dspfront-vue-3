@@ -6,14 +6,13 @@ import { Model, createORM } from 'pinia-orm'
 // import createPersistedState from 'vuex-persistedstate'
 import VueCookies from 'vue-cookies'
 import Buefy from '@dword-design/buefy'
-import VueRouter from 'vue-router'
+import { router } from './router'
 // import Vue from 'vue'
 import { createApp } from 'vue'
 import App from './App.vue'
 import vuetify from '@/plugins/vuetify'
 // import IdleVue from 'idle-vue'
 
-// import { router } from './router'
 // import { orm } from '@/models/orm'
 // import { persistedPaths } from './models/persistedPaths'
 // import { APP_NAME } from './constants'
@@ -29,6 +28,8 @@ import vuetify from '@/plugins/vuetify'
       // }
 const app = createApp(App)
 // app.config.productionTip = false
+
+app.use(router)
 
 const pinia = createPinia().use(createORM())
 app.use(pinia)
@@ -46,7 +47,7 @@ app.use(vuetify)
 //   ]
 // })
 
-app.use(VueRouter)
+app.use(router)
 app.use(VueCookies)
 app.use(Buefy, {
   defaultIconPack: 'fas',
